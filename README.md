@@ -8,8 +8,8 @@ The current project will need to be run using an IDE or the command line.
 1. clone the current repository to your local machine
 2. Using the virtual environment to run the current application.
 
-#### Create a new virtual environment called 507_project (will be in 'project4-env’ folder)
-    $ python -m  venv venv
+#### Create a new virtual environment called venv (will be in current folder)
+        $ python -m  venv venv
     
 ##### Activate project4-env
         $ source venv/bin/activate    # For Mac/Linux...
