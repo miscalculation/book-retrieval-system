@@ -1,5 +1,17 @@
-{{all_books}}
-    
-    
-    <a href="{{ url_for('index')}}">Retrieve a new book</a>
-    
+<ul>
+{% for sg in all_books %}
+<li>Title: {{sg['Title']}}<br>
+Author: {{ sg['Author'] }}<br>
+Genre: {{ sg['Genre'] }}<br>
+ISBN: {{ sg['ISBN'] }}<br>
+Description: {{sg['Description']}}<br>
+tf-idf: {{sg['ti_idf']}}</li><br>
+{% endfor %}
+</ul>
+
+{% if not all_books %}
+There are no books to show.
+{% endif %}
+
+
+<a href="{{ url_for('index')}}">Retrieve a new book</a>

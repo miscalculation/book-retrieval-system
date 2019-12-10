@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template, session, redirect, url_for, request # tools that will make it easier to build on things
 import numpy as np
 import pandas as pd
-import sqlite3 
+import sqlite3
 
 
 app = Flask(__name__)
@@ -107,8 +107,12 @@ def search(query, inverted, id_book):
                     tf_idf[book_id] = (1 + math.log10(frequency)) * idf[term]
 
         sorted_doc = sorted(tf_idf.items(), key=operator.itemgetter(1), reverse=True)
-
-    results = [id_book[book_id] for book_id, score in sorted_doc]
+    results = []
+    for book_id, score in sorted_doc:
+      temp = id_book[book_id]
+      temp["ti_idf"] = score
+      results.append(temp)
+    # results = [id_book[book_id] for book_id, score in sorted_doc]
     return results
 
 #results = search('beautiful', inverted, id_book)
@@ -124,5 +128,5 @@ def index():
     text = request.form['text']
     results = search(text, inverted, id_book)
     return render_template('simple.html',all_books=results)
-    
 
+app.run()
