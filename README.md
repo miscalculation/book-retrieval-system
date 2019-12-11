@@ -13,7 +13,7 @@ The current project will need to be run using an IDE or the command line.
     
 ##### Activate project4-env
         $ source venv/bin/activate    # For Mac/Linux...
-        $ source venv/Scripts/activate    # For Windows
+        $ venv\Scripts\activate    # For Windows
         (venv) $     # you've succeeded if you see this after!
         
 ##### install all packages based on a list in a file called requirements.txt
