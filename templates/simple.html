@@ -1,13 +1,13 @@
-<ul>
-{% for sg in all_books %}
-<li>Title: {{sg['Title']}}<br>
-Author: {{ sg['Author'] }}<br>
-Genre: {{ sg['Genre'] }}<br>
-ISBN: {{ sg['ISBN'] }}<br>
-Description: {{sg['Description']}}<br>
-tf-idf: {{sg['ti_idf']}}</li><br>
-{% endfor %}
-</ul>
+<ol type="1">
+  {% for sg in all_books %}
+    <li>Title: {{sg['Title']}}<br>
+    Author: {{ sg['Author'] }}<br>
+    Genre: {{ sg['Genre'] }}<br>
+    ISBN: {{ sg['ISBN'] }}<br>
+    Description: {{sg['Description']}}<br>
+    tf-idf: {{sg['ti_idf']}}</li><br>
+  {% endfor %}
+</ol>
 
 {% if not all_books %}
 There are no books to show.
