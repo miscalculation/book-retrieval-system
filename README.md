@@ -2,9 +2,10 @@
 
 ## How to run
 The current project will need to be run using an IDE or the command line.
-1. Clone the current repository to your local machine
-2. Using the virtual environment to run the current application.
 
+##### Clone the current repository to your local machine
+        git clone https://github.com/miscalculation/Book-Retrieval-System.git
+        
 ##### Install a virtual enviroment project4-env
         python3 -m pip install --user virtualenv    # For Mac/Linux...
         py -m pip install --user virtualenv    # For Windows
@@ -24,15 +25,9 @@ The current project will need to be run using an IDE or the command line.
 ##### Run program
         flask run
         
-#### Please make sure there is internet connection if the cache file is not in place.
-
-#### How to use
-1. Copy and paste the localhost base URL to a browser. Some localhost URL examples could be http://localhost:5000 or http://127.0.0.1:5000
-2. Currently there are 3 pages on this web application. The URL and page contents are as the following:
-
-#### Google chrome may not work. Edge usually work for this application
-3. End the program with the instruction of your console and deactivate the virtual environment.
-
+##### Copy and paste the localhost base URL to a browser and add "/books" to the end
+        Some localhost URL examples could be http://localhost:5000/books or http://127.0.0.1:5000/books
+        Please make sure there is internet connection if the cache file is not in place. Google chrome may not work. Edge usually work for this application
         
 ##### Deactivate the virtual environment
         (venv) deactivate
