@@ -13,22 +13,19 @@ The current project will need to be run using an IDE or the command line.
         py -m pip install --user virtualenv    # For Windows
 
 ##### Create a new virtual environment called venv (will be in current folder)
-        $ py -m venv env    # For Mac/Linux... 
-        $ python3 -m  venv env     # For Windows
+        py -m venv env    # For Mac/Linux... 
+        python3 -m  venv env     # For Windows
     
 ##### Activate project4-env
-        $ source env/bin/activate    # For Mac/Linux...
-        $ env\Scripts\activate    # For Windows
-        (env) $     # you've succeeded if you see this after!
+        source env/bin/activate    # For Mac/Linux...
+        env\Scripts\activate    # For Windows
+        (env) # you've succeeded if you see this after!
         
 ##### install all packages based on a list in a file called requirements.txt
-        (venv) $ pip install -r requirements.txt
+        (env) pip install -r requirements.txt
         
-##### When all running is done, deactivate the virtual environment
-        (venv) $ deactivate
 3. Running
 #### Please make sure there is internet connection if the cache file is not in place.
-
 
 ## How to use
 1. Copy and paste the localhost base URL to a browser. Some localhost URL examples could be http://localhost:5000 or http://127.0.0.1:5000
@@ -37,3 +34,6 @@ The current project will need to be run using an IDE or the command line.
 ### Google chrome may not work. Edge usually work for this application
 3. End the program with the instruction of your console and deactivate the virtual environment.
 
+        
+##### Deactivate the virtual environment
+        (env) deactivate
