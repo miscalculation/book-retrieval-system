@@ -1,4 +1,4 @@
-# 650
+# Book Retrieval System (SI 650)
 python3 -m venv venv <br>
 venv/Scripts/activate <br>
 flask run
@@ -28,6 +28,7 @@ The current project will need to be run using an IDE or the command line.
 ## How to use
 1. Copy and paste the localhost base URL to a browser. Some localhost URL examples could be http://localhost:5000 or http://127.0.0.1:5000
 2. Currently there are 3 pages on this web application. The URL and page contents are as the following:
-### google chrome may not work. Edge usually work for this application
+
+### Google chrome may not work. Edge usually work for this application
 3. End the program with the instruction of your console and deactivate the virtual environment.
 
