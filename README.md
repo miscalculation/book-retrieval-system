@@ -29,8 +29,8 @@ The current project will need to be run using an IDE or the command line.
         Some localhost URL examples could be http://localhost:5000/book or http://127.0.0.1:5000/book
         Please make sure there is internet connection if the cache file is not in place. Google chrome may not work. Edge usually work for this application
         You should see a page like this:
-        ![alt text](https://github.com/miscalculation/Book-Retrieval-System/blob/master/BookSite.png?raw=true)
-        
+
+![Screenshot](BookSite.png)        
         
 ##### Deactivate the virtual environment
         (venv) deactivate
