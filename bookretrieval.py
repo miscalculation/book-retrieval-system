@@ -3,7 +3,7 @@ import os
 from flask import Flask, render_template, session, redirect, url_for, request # tools that will make it easier to build on things
 import numpy as np
 import pandas as pd
-import sqlite3
+import pysqlite3
 
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ app.use_reloader = True
 app.config['SECRET_KEY'] = 'hard to guess string for app security adgsdfsadfdflsdfsj'
 
 
-conn = sqlite3.connect('books.sqlite')
+conn = pysqlite3.connect('books.sqlite')
 query = "SELECT * FROM Books;"
 
 df_books = pd.read_sql_query(query,conn)
