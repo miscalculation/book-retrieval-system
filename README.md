@@ -5,16 +5,21 @@ flask run
 
 ## How to run
 The current project will need to be run using an IDE or the command line.
-1. clone the current repository to your local machine
+1. Clone the current repository to your local machine
 2. Using the virtual environment to run the current application.
 
-#### Create a new virtual environment called venv (will be in current folder)
-        $ python -m  venv venv
+##### Install a virtual enviroment project4-env
+        python3 -m pip install --user virtualenv    # For Mac/Linux...
+        py -m pip install --user virtualenv    # For Windows
+
+##### Create a new virtual environment called venv (will be in current folder)
+        $ py -m venv env    # For Mac/Linux... 
+        $ python3 -m  venv env     # For Windows
     
 ##### Activate project4-env
-        $ source venv/bin/activate    # For Mac/Linux...
-        $ venv\Scripts\activate    # For Windows
-        (venv) $     # you've succeeded if you see this after!
+        $ source env/bin/activate    # For Mac/Linux...
+        $ env\Scripts\activate    # For Windows
+        (env) $     # you've succeeded if you see this after!
         
 ##### install all packages based on a list in a file called requirements.txt
         (venv) $ pip install -r requirements.txt
