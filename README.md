@@ -4,7 +4,7 @@
 The current project will need to be run using an IDE or the command line.
 
 ##### Clone the current repository to your local machine
-        git clone https://github.com/miscalculation/Book-Retrieval-System.git
+        git clone https://github.com/miscalculation/book-retrieval-system.git
         
 ##### Install a virtual enviroment project4-env
         python3 -m pip install --user virtualenv    # For Mac/Linux...
